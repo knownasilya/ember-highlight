@@ -5,7 +5,7 @@ const { run } = Ember;
 
 const HighlightTerm = Ember.Component.extend({
   layout,
-  classNames: ['highlight-term'],
+  classNames: ['highlight-terms'],
 
   didReceiveAttrs() {
     var term = this.get('term');

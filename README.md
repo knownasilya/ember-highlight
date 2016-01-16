@@ -17,6 +17,10 @@ Uses [jquery-highlight] internally.
 {{/highlight-terms}}
 ```
 
+Default term wrapper is `span.highlight` which is styled automatically
+by a single style, see `vendor/simple.css`. To override just add your own style
+to `.highlight-terms .highlight`.
+
 ## Attributes
 
 The positional params map to `term`.
