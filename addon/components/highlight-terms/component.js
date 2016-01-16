@@ -24,7 +24,17 @@ const HighlightTerm = Ember.Component.extend({
   highlight(term, options) {
     if (term) {
       if (Array.isArray(term)) {
-        term = term.filter(item => item);
+        term = term.reduce((all, item) => {
+          if (term !== undefined) {
+            if (Array.isArray(item)) {
+              all = all.concat(...item);
+            } else {
+              app.push(item);
+            }
+          }
+
+          return all;
+        }, []);
       }
 
       this.$().highlight(term, options);
