@@ -6,6 +6,7 @@ Highlight a given term(s) inside the `{{highlight-terms}}` component block.
 [![Build Status][travis-badge]][travis-badge-url]
 [![Ember Observer Score][ember-observer-badge]][ember-observer-url]
 
+See the [demo].  
 Uses [jquery-highlight] internally.
 
 ## Usage
@@ -46,3 +47,4 @@ ember github-pages:commit --message <message describing demo release>
 [travis-badge-url]: https://travis-ci.org/knownasilya/ember-highlight
 [ember-observer-badge]: http://emberobserver.com/badges/ember-highlight.svg
 [ember-observer-url]: http://emberobserver.com/addons/ember-highlight
+[demo]:  http://knownasilya.github.io/ember-highlight/
