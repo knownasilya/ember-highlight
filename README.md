@@ -9,6 +9,10 @@ Highlight a given term(s) inside the `{{highlight-terms}}` component block.
 See the [demo].  
 Uses [jquery-highlight] internally.
 
+```no-highlight
+ember install ember-highlight
+```
+
 ## Usage
 
 ```hbs
