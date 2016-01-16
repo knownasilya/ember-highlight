@@ -12,7 +12,8 @@ Uses [jquery-highlight] internally.
 ## Usage
 
 ```hbs
-{{#highlight-terms 'hello' 'joh'}}
+<!-- list=['joh', 'fail'] -->
+{{#highlight-terms 'hello' list 'other'}}
   Hello my name is Johnny.
 {{/highlight-terms}}
 ```
