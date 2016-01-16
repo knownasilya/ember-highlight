@@ -29,7 +29,7 @@ terms, which are automatically flattened.
 
 * `caseSensitive` - Defaults to `false`.
 * `wordsOnly` - Defaults to `false`.
-* `term` - String or Array of strings.
+* `term` - String or Array of strings, or an Array of arrays of strings.
 
 ## Testing
 
