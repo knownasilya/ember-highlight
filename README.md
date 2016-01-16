@@ -1,26 +1,33 @@
-# Ember-highlight
+# ember-highlight
 
-This README outlines the details of collaborating on this Ember addon.
+Highlight a given term(s) inside the `{{highlight-terms}}` component block.
 
-## Installation
+[![NPM][npm-badge-img]][npm-badge-link]
+[![Build Status][travis-badge]][travis-badge-url]
+[![Ember Observer Score][ember-observer-badge]][ember-observer-url]
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Uses [jquery-highlight] internally.
 
-## Running
+## Usage
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```hbs
+{{#highlight-terms 'hello'}}
+  Hello my name is Johnny.
+{{/highlight-terms}}
+```
 
-## Running Tests
+## Attributes
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+The first positional param maps to `term`.
 
-## Building
+* `caseSensitive` - Defaults to `false`.
+* `wordsOnly` - Defaults to `false`.
+* `term` - String or Array of strings.
 
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+[jquery-highlight]: https://github.com/knownasilya/jquery-highlight
+[npm-badge-img]: https://badge.fury.io/js/ember-highlight.svg
+[npm-badge-link]: http://badge.fury.io/js/ember-highlight
+[travis-badge]: https://travis-ci.org/knownasilya/ember-highlight.svg
+[travis-badge-url]: https://travis-ci.org/knownasilya/ember-highlight
+[ember-observer-badge]: http://emberobserver.com/badges/ember-highlight.svg
+[ember-observer-url]: http://emberobserver.com/addons/ember-highlight

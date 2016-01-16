@@ -12,5 +12,8 @@
   },
   "resolutions": {
     "ember": "2.2.0"
+  },
+  "devDependencies": {
+    "jquery-highlight": "~3.3.0"
   }
 }

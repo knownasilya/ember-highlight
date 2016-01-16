@@ -1,3 +1,22 @@
 <h2 id="title">Welcome to Ember</h2>
 
 {{outlet}}
+
+<input type="text" value={{text}} oninput={{action (mut text) value="currentTarget.value"}}>
+<br/>
+<label>
+  <input type="checkbox" checked={{caseSensitive}} onchange={{action (mut caseSensitive) value="currentTarget.checked"}}>
+  Case Sensitive
+</label>
+<br/>
+<label>
+  <input type="checkbox" checked={{wordsOnly}} onchange={{action (mut wordsOnly) value="currentTarget.checked"}}>
+  Words Only
+</label>
+
+{{#highlight-terms text caseSensitive=caseSensitive wordsOnly=wordsOnly}}
+  <p>
+    Hello, this is a simple test for highlighting words. Give the options
+    above a try.
+  </p>
+{{/highlight-terms}}
