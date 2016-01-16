@@ -25,11 +25,11 @@ const HighlightTerm = Ember.Component.extend({
     if (term) {
       if (Array.isArray(term)) {
         term = term.reduce((all, item) => {
-          if (term !== undefined) {
+          if (item !== undefined) {
             if (Array.isArray(item)) {
               all = all.concat(...item);
             } else {
-              app.push(item);
+              all.push(item);
             }
           }
 
