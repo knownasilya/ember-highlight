@@ -31,7 +31,11 @@ The positional params map to `term`.
 
 ## Testing
 
-`ember test` works just fine, plus `ember serve` and then visit 'http://localhost:4200/ember-highlight/' to see the demo app.
+```no-highlight
+ember test --server
+```
+
+Visit `http://localhost:4200/ember-highlight/` to see the demo app.
 
 ### Building Demo (Github Pages)
 
