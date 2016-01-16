@@ -23,6 +23,10 @@ const HighlightTerm = Ember.Component.extend({
 
   highlight(term, options) {
     if (term) {
+      if (Array.isArray(term)) {
+        term = term.filter(item => item);
+      }
+
       this.$().highlight(term, options);
     }
   },
