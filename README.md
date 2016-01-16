@@ -23,7 +23,8 @@ to `.highlight-terms .highlight`.
 
 ## Attributes
 
-The positional params map to `term`.
+The positional params map to `term`. Each param can be an array of
+terms, which are automatically flattened.
 
 * `caseSensitive` - Defaults to `false`.
 * `wordsOnly` - Defaults to `false`.
