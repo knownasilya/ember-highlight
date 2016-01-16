@@ -1,7 +1,7 @@
 {
   "name": "ember-highlight",
-  "version": "1.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "1.0.1",
+  "description": "Highlight a given term(s) inside the `{{highlight-terms}}` component block",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/knownasilya/ember-highlight",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Ilya Radchenko <ilya@burstcreations.com>",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -38,7 +38,12 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "jquery-highlight",
+    "highlight",
+    "terms",
+    "keywords",
+    "search"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
