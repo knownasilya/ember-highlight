@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  text: 'hello'
+  text: 'hello',
+  text2: 'tr'
 });

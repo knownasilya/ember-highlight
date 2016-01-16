@@ -33,7 +33,7 @@ const HighlightTerm = Ember.Component.extend({
 });
 
 HighlightTerm.reopenClass({
-  positionalParams: ['term']
+  positionalParams: 'term'
 });
 
 export default HighlightTerm;

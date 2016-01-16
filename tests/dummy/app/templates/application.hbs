@@ -3,6 +3,7 @@
 {{outlet}}
 
 <input type="text" value={{text}} oninput={{action (mut text) value="currentTarget.value"}}>
+<input type="text" value={{text2}} oninput={{action (mut text2) value="currentTarget.value"}}>
 <br/>
 <label>
   <input type="checkbox" checked={{caseSensitive}} onchange={{action (mut caseSensitive) value="currentTarget.checked"}}>
@@ -14,7 +15,7 @@
   Words Only
 </label>
 
-{{#highlight-terms text caseSensitive=caseSensitive wordsOnly=wordsOnly}}
+{{#highlight-terms text text2 caseSensitive=caseSensitive wordsOnly=wordsOnly}}
   <p>
     Hello, this is a simple test for highlighting words. Give the options
     above a try.

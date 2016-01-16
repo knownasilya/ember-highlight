@@ -11,14 +11,14 @@ Uses [jquery-highlight] internally.
 ## Usage
 
 ```hbs
-{{#highlight-terms 'hello'}}
+{{#highlight-terms 'hello' 'joh'}}
   Hello my name is Johnny.
 {{/highlight-terms}}
 ```
 
 ## Attributes
 
-The first positional param maps to `term`.
+The positional params map to `term`.
 
 * `caseSensitive` - Defaults to `false`.
 * `wordsOnly` - Defaults to `false`.
