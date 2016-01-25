@@ -1,6 +1,6 @@
 {
   "name": "ember-highlight",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Highlight a given term(s) inside the `{{highlight-terms}}` component block",
   "directories": {
     "doc": "doc",
