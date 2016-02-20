@@ -37,12 +37,16 @@ const HighlightTerm = Ember.Component.extend({
         }, []);
       }
 
-      this.$().highlight(term, options);
+      if (this.$()) {
+        this.$().highlight(term, options);
+      }
     }
   },
 
   unhighlight() {
-    this.$().unhighlight();
+    if (this.$()) {
+      this.$().unhighlight();
+    }
   }
 });
 
