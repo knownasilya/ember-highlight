@@ -37,14 +37,14 @@ const HighlightTerm = Ember.Component.extend({
         }, []);
       }
 
-      if (this._state == "inDOM") {
+      if (this.$()) {
         this.$().highlight(term, options);
       }
     }
   },
 
   unhighlight() {
-    if (this._state == "inDOM") {
+    if (this.$()) {
       this.$().unhighlight();
     }
   }
