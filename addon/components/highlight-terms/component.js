@@ -3,8 +3,7 @@ import layout from './template';
 
 const {
   run,
-  Component,
-  isArray
+  Component
 } = Ember;
 
 const HighlightTerm = Component.extend({
@@ -29,10 +28,10 @@ const HighlightTerm = Component.extend({
 
   highlight(term, options) {
     if (term) {
-      if (isArray(term)) {
+      if (Array.isArray(term)) {
         term = term.reduce((all, item) => {
           if (item !== undefined) {
-            if (isArray(item)) {
+            if (Array.isArray(item)) {
               all = all.concat(...item);
             } else {
               all.push(item);
