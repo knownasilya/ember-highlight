@@ -1,13 +1,18 @@
 import Ember from 'ember';
 import layout from './template';
 
-const { run } = Ember;
+const {
+  run,
+  Component,
+  isArray
+} = Ember;
 
-const HighlightTerm = Ember.Component.extend({
+const HighlightTerm = Component.extend({
   layout,
   classNames: ['highlight-terms'],
 
   didReceiveAttrs() {
+    this._super(...arguments);
     var term = this.get('term');
     var options = this.getProperties('caseSensitive', 'wordsOnly');
 
@@ -18,15 +23,16 @@ const HighlightTerm = Ember.Component.extend({
   },
 
   willDestroyElement() {
+    this._super(...arguments);
     this.unhighlight();
   },
 
   highlight(term, options) {
     if (term) {
-      if (Array.isArray(term)) {
+      if (isArray(term)) {
         term = term.reduce((all, item) => {
           if (item !== undefined) {
-            if (Array.isArray(item)) {
+            if (isArray(item)) {
               all = all.concat(...item);
             } else {
               all.push(item);
