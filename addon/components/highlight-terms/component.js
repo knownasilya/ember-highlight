@@ -1,13 +1,17 @@
 import Ember from 'ember';
 import layout from './template';
 
-const { run } = Ember;
+const {
+  run,
+  Component
+} = Ember;
 
-const HighlightTerm = Ember.Component.extend({
+const HighlightTerm = Component.extend({
   layout,
   classNames: ['highlight-terms'],
 
   didReceiveAttrs() {
+    this._super(...arguments);
     var term = this.get('term');
     var options = this.getProperties('caseSensitive', 'wordsOnly');
 
@@ -18,6 +22,7 @@ const HighlightTerm = Ember.Component.extend({
   },
 
   willDestroyElement() {
+    this._super(...arguments);
     this.unhighlight();
   },
 
