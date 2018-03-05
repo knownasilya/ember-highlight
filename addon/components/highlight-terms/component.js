@@ -1,10 +1,6 @@
-import Ember from 'ember';
+import { run } from '@ember/runloop';
+import Component from '@ember/component';
 import layout from './template';
-
-const {
-  run,
-  Component
-} = Ember;
 
 const HighlightTerm = Component.extend({
   layout,
