@@ -19,5 +19,3 @@ testem.log
 # ember-try
 .node_modules.ember-try/
 package.json.ember-try
-
-yarn.lock
