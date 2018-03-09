@@ -1,6 +1,5 @@
 'use strict';
 
-const path = require('path');
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
@@ -15,7 +14,7 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
-  app.import(path.join(app.bowerDirectory, 'jquery-highlight', 'jquery.highlight.js'));
+  app.import('node_modules/jquery-highlight/jquery.highlight.js');
 
   return app.toTree();
 };

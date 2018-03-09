@@ -1,7 +1,0 @@
-{
-  "name": "ember-highlight",
-  "dependencies": {},
-  "devDependencies": {
-    "jquery-highlight": "~3.3.0"
-  }
-}
