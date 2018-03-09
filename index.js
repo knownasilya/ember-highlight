@@ -1,8 +1,9 @@
 'use strict';
 
-var path = require('path');
-var Funnel = require('broccoli-funnel');
-var MergeTrees = require('broccoli-merge-trees');
+const path = require('path');
+const Funnel = require('broccoli-funnel');
+const MergeTrees = require('broccoli-merge-trees');
+const map = require('broccoli-stew').map;
 
 module.exports = {
   name: 'ember-highlight',
@@ -14,9 +15,11 @@ module.exports = {
   },
 
   treeForVendor(vendorTree) {
-    var jqueryHighlightTree = new Funnel(path.dirname(require.resolve('jquery-highlight/jquery.highlight.js')), {
+    let jqueryHighlightTree = new Funnel(path.dirname(require.resolve('jquery-highlight/jquery.highlight.js')), {
       files: ['jquery.highlight.js']
     });
+
+    jqueryHighlightTree = map(jqueryHighlightTree, (content) => `if (typeof FastBoot === 'undefined') { ${content} }`);
 
     return new MergeTrees([vendorTree, jqueryHighlightTree]);
   }
