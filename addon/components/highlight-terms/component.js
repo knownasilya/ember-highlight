@@ -45,7 +45,9 @@ const HighlightTerm = Component.extend({
   },
 
   unhighlight() {
-    if (this.$()) {
+    let $el = this.$();
+    
+    if ($el && typeof $el.unhighlight === 'function') {
       this.$().unhighlight();
     }
   }
