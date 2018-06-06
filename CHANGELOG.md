@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.7"></a>
+## [1.2.7](https://github.com/knownasilya/ember-highlight/compare/v1.2.6...v1.2.7) (2018-06-06)
+
+
+### Bug Fixes
+
+* check that highlight is setup before running unhighlight ([5e0f79e](https://github.com/knownasilya/ember-highlight/commit/5e0f79e))
+* update lock files ([b4933e4](https://github.com/knownasilya/ember-highlight/commit/b4933e4))
+
+
+
 <a name="1.2.6"></a>
 ## [1.2.6](https://github.com/knownasilya/ember-highlight/compare/v1.2.5...v1.2.6) (2018-03-09)
 
