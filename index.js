@@ -12,6 +12,7 @@ module.exports = {
     this._super.included.apply(this, arguments);
     this.import('vendor/simple.css');
     this.import('vendor/shims/jquery-highlight.js');
+    this.import('vendor/jquery.highlight.js');
   },
 
   treeForVendor(vendorTree) {
