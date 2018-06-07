@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.8"></a>
+## [1.2.8](https://github.com/knownasilya/ember-highlight/compare/v1.2.7...v1.2.8) (2018-06-07)
+
+
+### Bug Fixes
+
+* Add jquery-highlight dependency to vendor imports ([#12](https://github.com/knownasilya/ember-highlight/issues/12)) ([84ddb57](https://github.com/knownasilya/ember-highlight/commit/84ddb57)), closes [#1](https://github.com/knownasilya/ember-highlight/issues/1)
+
+
+
 <a name="1.2.7"></a>
 ## [1.2.7](https://github.com/knownasilya/ember-highlight/compare/v1.2.6...v1.2.7) (2018-06-06)
 
