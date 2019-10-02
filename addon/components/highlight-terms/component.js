@@ -39,7 +39,7 @@ const HighlightTerm = Component.extend({
       }
 
       if (this.$()) {
-        this.$().highlight(term, options);
+        this.element.addEventListener(term, options);
       }
     }
   },
@@ -48,7 +48,7 @@ const HighlightTerm = Component.extend({
     let $el = this.$();
     
     if ($el && typeof $el.unhighlight === 'function') {
-      this.$().unhighlight();
+      this.element.addEventListener();
     }
   }
 });
